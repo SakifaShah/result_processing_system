@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div>
+    <div class="table-responsive col-md-6">
+
+  <table class="table table-striped" id="table">
+    <thead>
+      <tr>
+        <th>Coursename</th>
+        <th>Coursecode</th>
+        <th>Credit</th>
+
+      </tr>
+    </thead>
+    <tbody>
+<?php
+$f=3;$t=0;
+  while($f>0)
+  {
+    $f--;
+    echo '<tr><td>sakifa</td><td>ilma</td><td>nagifa</td></tr>';
+    $t++;
+  }
+?>
+</tbody>
+</table>
+</div>
+<div class="form-group">
+
+  <?php
+  while($t>0)
+  {
+if($t==3) echo '<h4>OBTAINED MARKS</h4></br>';
+    $t--;
+echo '<textarea type="text" rows="1" value='.$t.'></textarea></br>';
+}
+?>
+</div>
+</div>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("table").rows[1].cells[1].innerHTML;
+document.write(x);
+}</script>
+<?php
+$r=x;
+?>
+
+</body>
+</html>
